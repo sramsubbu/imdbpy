@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+IMDBClient.egg-info/PKG-INFO
+IMDBClient.egg-info/SOURCES.txt
+IMDBClient.egg-info/dependency_links.txt
+IMDBClient.egg-info/entry_points.txt
+IMDBClient.egg-info/top_level.txt
+IMDBClient.egg-info/zip-safe
+imdbclient/__init__.py

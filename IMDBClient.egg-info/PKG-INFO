@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: IMDBClient
+Version: 0.1dev
+Summary: A third party imdb cli utility
+Home-page: UNKNOWN
+Author: Ramasubramanian S
+Author-email: sramsubu@gmail.com
+License: GPL
+Description: A third party utility for IMDb website using the omdbapi, written in python
+Keywords: python IMDb cli
+Platform: UNKNOWN
