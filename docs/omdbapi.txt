@@ -1,0 +1,29 @@
+API url:
+	http://www.omdbapi.com/?
+
+Parameter | Value | Description
+
+s    | string(optional) | title of a movie to search
+i    | string(optional) | a valid IMDb movie id
+t    | string(optional) | title of a movie to return 
+y    | year(optional)   | year of the movie 
+r    | JSON, XML        | response data type (JSON default) 
+plot | short, full      | short or extended plot(short default)
+callback | name(optional) | JSONP callback name
+tomatoes | true(optional) | adds rotten tomatoes data
+
+#NOTE: while "i" and "t" are optional atleast one argument is required
+
+Sample queries:
+#search for the movie "The Godfather"
+www.omdbapi.com/?s=The Godfather
+
+#movie with title
+www.omdbapi.com/?t=The Godfather
+
+
+#movie with title and year 
+www.omdbapi.com/?t=The Godfather&y=1972
+
+
+
