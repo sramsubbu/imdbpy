@@ -36,7 +36,8 @@ class IMDb:
 
     @options.setter
     def options(self,value):
-        self.options = value
+        for i in value:
+            self.options[i] = value[i]
 
     def build_url(self):
         #No option available
@@ -50,6 +51,7 @@ class IMDb:
             prefix = "&"
         
         self.url = url
+        return True
     
     def print_url(self):
         print self.url
@@ -63,8 +65,8 @@ def get_json(options):
     if options is None:
         return None
     obj = IMDb(options)
-    obj.build_url()
-    return obj.get_json()
+    if obj.build_url():
+        return obj.get_json()
 
 
     
