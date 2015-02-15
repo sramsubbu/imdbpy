@@ -27,7 +27,7 @@ class Search:
             return 
         res_string = ""
         for index,i in enumerate(self.results):
-            res_string +=  "%d) %s [%s]\n Type: %s\n" %(index,i['Title'],i['Year'],i['Type'])  
+            res_string +=  "%d) %s [%s]\nType: %s\n\n" %(index,i['Title'],i['Year'],i['Type'])  
 
         return res_string
 

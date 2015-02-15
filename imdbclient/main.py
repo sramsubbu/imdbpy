@@ -1,6 +1,7 @@
 from sys import argv
 import argparse
 from movie import Movie
+from search import Search
 VERSION = "0.1.0"
 
 def print_version():
@@ -32,14 +33,11 @@ def main():
 
 def search(title):
     print "Search results for %s:" %title
-    print "not yet implemented"
+    results = Search(title)
+    results.search()
+    print results.format_results()
 
-def my_movie(title,option):
-    m = Movie(title)
-    if not option:
-        m.print_data()
-    elif option == "Rating":
-        print "%s\nRating: %s" %(title,m.rating)
+    
 
 
 if __name__ == "__main__":
