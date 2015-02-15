@@ -99,22 +99,7 @@ class Movie:
              
          
 if __name__ == "__main__":
-    import sys
-       
-    def ui():   
-        try:
-            title = raw_input("Enter a name of the movie:")
-            movie = Movie(title = title)
-            movie.print_data()
-            return True
-        except EOFError:
-            return False
+    title = "V for Vendetta"
+    movie = Movie(title=title)
+    movie.print_data()
 
-    if "-i" in sys.argv or "--interactive" in sys.argv:
-        ui()
-        while(True):
-            if not ui():
-                break
-    else:
-        ui()
-        
