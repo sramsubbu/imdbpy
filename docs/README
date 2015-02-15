@@ -1,0 +1,8 @@
+USAGE:
+imdb [options] [movie]
+options:
+-s or --search - print the imdb search results
+-d or --director - print the director of the movie 
+-r or --rating  - print the imdb rating of the movie
+-h or --help - print the help
+-v or --version - print the program name and the version. [ and also the license text]
