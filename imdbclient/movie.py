@@ -20,7 +20,7 @@ class Movie:
                 keys:
                     Plot
                     Rated
-                    Response
+                    *Response*
                     Title
                     Country
                     Writer
@@ -99,6 +99,9 @@ class Movie:
              
          
 if __name__ == "__main__":
+    """
+    testing the module with sample data
+    """
     title = "V for Vendetta"
     movie = Movie(title=title)
     movie.print_data()

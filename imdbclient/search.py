@@ -27,8 +27,7 @@ class Search:
             return 
         res_string = ""
         for index,i in enumerate(self.results):
-            res_string +=  "%d) %s [%s]\nType: %s\n\n" %(index,i['Title'],i['Year'],i['Type'])  
-
+            res_string +=  "%d) %s [%s]\nType: %s\t(ID:%s)\n\n" %(index,i['Title'],i['Year'],i['Type'],i['imdbID'])  
         return res_string
 
 if __name__ == "__main__":

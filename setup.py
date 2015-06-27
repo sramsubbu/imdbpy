@@ -20,7 +20,7 @@ A third party utility for IMDb website using the omdbapi, written in python""",
       install_requires=[
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
+      entry_points={
+        'console_scripts': ['imdb = imdbclient.main:main']
+      }
       )
